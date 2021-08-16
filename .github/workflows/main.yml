@@ -1,0 +1,7 @@
+name: main
+on: [push]
+jobs:
+  save-the-universe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: ! ls ${{ github.workspace }} | grep -i readme
