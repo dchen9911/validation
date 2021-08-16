@@ -4,4 +4,4 @@ jobs:
   save-the-universe:
     runs-on: ubuntu-latest
     steps:
-      - run: ! ls ${{ github.workspace }} | grep -i readme
+      - run: echo "(! ls -R ${{ github.workspace }} | grep -i readme)" | bash 
